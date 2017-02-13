@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Map View Controller-->
+        <scene sceneID="klR-KH-Nkl">
+            <objects>
+                <viewController storyboardIdentifier="MapViewController" id="gK2-fI-Bya" customClass="MapViewController" customModule="Azamara" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Su3-ZI-tmg"/>
+                        <viewControllerLayoutGuide type="bottom" id="Lax-L6-qNI"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="nt8-Cb-B2R">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="map" translatesAutoresizingMaskIntoConstraints="NO" id="wJG-KS-iqt">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Svf-bT-qPh">
+                                <rect key="frame" x="3" y="4" width="55" height="55"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="lgu-8k-u3X"/>
+                                    <constraint firstAttribute="width" constant="55" id="mpe-cg-lxf"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="dismiss:" destination="gK2-fI-Bya" eventType="touchUpInside" id="i1v-Gz-AQI"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wJG-KS-iqt" firstAttribute="top" secondItem="Su3-ZI-tmg" secondAttribute="bottom" id="B7c-ti-pnC"/>
+                            <constraint firstAttribute="trailing" secondItem="wJG-KS-iqt" secondAttribute="trailing" id="LgT-wD-3bI"/>
+                            <constraint firstItem="wJG-KS-iqt" firstAttribute="leading" secondItem="nt8-Cb-B2R" secondAttribute="leading" id="cw9-rt-K8X"/>
+                            <constraint firstItem="Svf-bT-qPh" firstAttribute="top" secondItem="Su3-ZI-tmg" secondAttribute="bottom" constant="4" id="eZ3-jQ-Ey9"/>
+                            <constraint firstItem="Lax-L6-qNI" firstAttribute="top" secondItem="wJG-KS-iqt" secondAttribute="bottom" id="nUz-Na-n2w"/>
+                            <constraint firstItem="Svf-bT-qPh" firstAttribute="leading" secondItem="nt8-Cb-B2R" secondAttribute="leading" constant="3" id="zK1-xl-P2k"/>
+                        </constraints>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qRK-hk-hkP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="109.59999999999999" y="172.26386806596702"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="map" width="750" height="1294"/>
+    </resources>
+</document>
